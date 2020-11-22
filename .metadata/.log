@@ -1105,3 +1105,49 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2020-11-21 23:37:42.573
 !MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2020-11-22 10:04:09.910 -----------------------------------------------
+eclipse.buildId=Version 1.3.0
+java.version=1.8.0_242
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=iw_IL
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2020-11-22 10:04:22.134
+!MESSAGE Log4j initialized with config file C:\Users\ITSIK\STM32CubeIDE\workspace_1.3.0\embeddedCourse1\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2020-11-22 10:04:28.968
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2020-11-22 10:04:29.233
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-11-22 10:13:24.377
+!MESSAGE Indexed 'clock' (0 sources, 0 headers) in 0.012 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-11-22 10:13:31.899
+!MESSAGE Indexed 'clock' (37 sources, 99 headers) in 4.22 sec: 7,479 declarations; 47,469 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-11-22 10:56:14.163
+!MESSAGE Indexed '005HSI_mesurment' (0 sources, 0 headers) in 0.001 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-11-22 10:56:14.819
+!MESSAGE Indexed '005HSI_mesurment' (3 sources, 0 headers) in 0.022 sec: 67 declarations; 42 references; 10 unresolved inclusions; 0 syntax errors; 14 unresolved names (11%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-11-22 11:26:51.773
+!MESSAGE Indexed '006HSI_mesurment' (0 sources, 0 headers) in 0.001 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-11-22 11:26:56.752
+!MESSAGE Indexed '006HSI_mesurment' (38 sources, 99 headers) in 2.77 sec: 7,486 declarations; 47,487 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.core.resources 4 77 2020-11-22 11:27:35.614
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2020-11-22 11:27:35.614
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2020-11-22 11:27:35.614
+!MESSAGE C:\Users\ITSIK\STM32CubeIDE\workspace_1.3.0\embeddedCourse1\006HSI_mesurment overlaps the location of another project: '006HSI_mesurment'
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-11-22 11:27:41.719
+!MESSAGE Indexed '006HSI_Mesurment1' (0 sources, 0 headers) in 0.001 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-11-22 11:27:43.090
+!MESSAGE Indexed '006HSI_Mesurment1' (3 sources, 0 headers) in 0.011 sec: 67 declarations; 42 references; 10 unresolved inclusions; 0 syntax errors; 14 unresolved names (11%)
