@@ -198,7 +198,7 @@ typedef struct
 #define SPI2_PCLK_DE() (RCC->APB1ENR &= ~(1 << 14))
 #define SPI3_PCLK_DE() (RCC->APB1ENR &= ~(1 << 15))
 #define SPI4_PCLK_DE() (RCC->APB2ENR &= ~(1 << 13))
-
+f
 /*
  * clock disable macros for USARTx peripherals
  */
