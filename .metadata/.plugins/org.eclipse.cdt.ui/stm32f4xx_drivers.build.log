@@ -1,10 +1,15 @@
-14:28:06 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+17:46:56 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
 make -j4 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -DDEBUG -c -I../Inc -I"C:/Users/ITSIK/STM32CubeIDE/workspace_1.3.0/embeddedCourse1/stm32f4xx_drivers/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-../Src/main.c:21:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
-   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
-    ^~~~~~~
-arm-none-eabi-gcc -o "stm32f4xx_drivers.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ITSIK\STM32CubeIDE\workspace_1.3.0\embeddedCourse1\stm32f4xx_drivers\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f4xx_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+arm-none-eabi-gcc "../drivers/src/stm32f407xx_gpio_driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -DDEBUG -c -I../Inc -I"C:/Users/Itsik Ben Atar/STM32CubeIDE/workspace_1.4.0/embeddedCourse1/stm32f4xx_drivers/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/src/stm32f407xx_gpio_driver.d" -MT"drivers/src/stm32f407xx_gpio_driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "drivers/src/stm32f407xx_gpio_driver.o"
+../drivers/src/stm32f407xx_gpio_driver.c: In function 'GPIO_ReadFromInputPin':
+../drivers/src/stm32f407xx_gpio_driver.c:87:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../drivers/src/stm32f407xx_gpio_driver.c: In function 'GPIO_ReadFromInputPort':
+../drivers/src/stm32f407xx_gpio_driver.c:90:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+arm-none-eabi-gcc -o "stm32f4xx_drivers.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Itsik Ben Atar\STM32CubeIDE\workspace_1.4.0\embeddedCourse1\stm32f4xx_drivers\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f4xx_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: stm32f4xx_drivers.elf
  
 arm-none-eabi-objdump -h -S  stm32f4xx_drivers.elf  > "stm32f4xx_drivers.list"
@@ -14,10 +19,10 @@ arm-none-eabi-size   stm32f4xx_drivers.elf
     676	      8	   1568	   2252	    8cc	stm32f4xx_drivers.elf
 Finished building: default.size.stdout
  
-Finished building: stm32f4xx_drivers.list
 Finished building: stm32f4xx_drivers.bin
+Finished building: stm32f4xx_drivers.list
  
  
 
-14:28:08 Build Finished. 0 errors, 1 warnings. (took 1s.814ms)
+17:46:58 Build Finished. 0 errors, 2 warnings. (took 2s.244ms)
 

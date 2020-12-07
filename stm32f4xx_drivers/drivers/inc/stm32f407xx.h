@@ -112,23 +112,23 @@ typedef struct
 
 
 
-}RCC_RegDef_t;
+} RCC_RegDef_t;
 
 /*
  * peripheral definitions (peripheral base addresses typecasted to xxx_RefDef_t
  * */
 
-#define GPIOA 		((*GPIO_RegDef_t)GPIOA_BASEADDR)
-#define GPIOB 		((*GPIO_RegDef_t)GPIOB_BASEADDR)
-#define GPIOC 		((*GPIO_RegDef_t)GPIOC_BASEADDR)
-#define GPIOD 		((*GPIO_RegDef_t)GPIOD_BASEADDR)
-#define GPIOE 		((*GPIO_RegDef_t)GPIOE_BASEADDR)
-#define GPIOF 		((*GPIO_RegDef_t)GPIOF_BASEADDR)
-#define GPIOG 		((*GPIO_RegDef_t)GPIOG_BASEADDR)
-#define GPIOH		((*GPIO_RegDef_t)GPIOH_BASEADDR)
-#define GPIOI		((*GPIO_RegDef_t)GPIOI_BASEADDR)
+#define GPIOA  				((GPIO_RegDef_t*)GPIOA_BASEADDR)
+#define GPIOB  				((GPIO_RegDef_t*)GPIOB_BASEADDR)
+#define GPIOC  				((GPIO_RegDef_t*)GPIOC_BASEADDR)
+#define GPIOD  				((GPIO_RegDef_t*)GPIOD_BASEADDR)
+#define GPIOE  				((GPIO_RegDef_t*)GPIOE_BASEADDR)
+#define GPIOF  				((GPIO_RegDef_t*)GPIOF_BASEADDR)
+#define GPIOG  				((GPIO_RegDef_t*)GPIOG_BASEADDR)
+#define GPIOH  				((GPIO_RegDef_t*)GPIOH_BASEADDR)
+#define GPIOI  				((GPIO_RegDef_t*)GPIOI_BASEADDR)
 
-#define RCC 		((*RCC_RegDef_t)RCC_BASEADDR)
+#define RCC 				((RCC_RegDef_t*)RCC_BASEADDR)
 
 /*
  * clock enable macros for GPIOx peripherals
@@ -213,4 +213,13 @@ typedef struct
  */
 #define SYSCFG_PCLK_DE() (RCC->APB2ENR &= ~(1 << 14))
 
+
+
+// some generic macros
+#define ENABLE 1
+#define DISABLE 0
+#define SET ENABLE
+#define RESET DISABLE
+#define GPIO_PIN_SET SET
+#define GPIO_PIN_RESET RESET
 #endif /* INC_STM32F407XX_H_ */

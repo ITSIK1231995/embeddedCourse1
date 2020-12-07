@@ -12,6 +12,8 @@ SIZE_OUTPUT :=
 OBJDUMP_LIST := 
 EXECUTABLES := 
 OBJS := 
+S_DEPS := 
+S_UPPER_DEPS := 
 C_DEPS := 
 OBJCOPY_BIN := 
 
@@ -19,4 +21,5 @@ OBJCOPY_BIN :=
 SUBDIRS := \
 Src \
 Startup \
+drivers/src \
 
