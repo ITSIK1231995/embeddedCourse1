@@ -1,8 +1,0 @@
-/*
- * stm32f407xx_gpio.c
- *
- *  Created on: 6 בדצמ׳ 2020
- *      Author: Itsik Ben Atar
- */
-
-#include "stm32f407xx_gpio_driver.h"
