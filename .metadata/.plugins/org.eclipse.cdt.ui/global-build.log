@@ -1,25 +1,282 @@
-17:46:56 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+12:40:35 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
 make -j4 all 
-arm-none-eabi-gcc "../drivers/src/stm32f407xx_gpio_driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -DDEBUG -c -I../Inc -I"C:/Users/Itsik Ben Atar/STM32CubeIDE/workspace_1.4.0/embeddedCourse1/stm32f4xx_drivers/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/src/stm32f407xx_gpio_driver.d" -MT"drivers/src/stm32f407xx_gpio_driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "drivers/src/stm32f407xx_gpio_driver.o"
-../drivers/src/stm32f407xx_gpio_driver.c: In function 'GPIO_ReadFromInputPin':
-../drivers/src/stm32f407xx_gpio_driver.c:87:1: warning: control reaches end of non-void function [-Wreturn-type]
- }
- ^
-../drivers/src/stm32f407xx_gpio_driver.c: In function 'GPIO_ReadFromInputPort':
-../drivers/src/stm32f407xx_gpio_driver.c:90:1: warning: control reaches end of non-void function [-Wreturn-type]
- }
- ^
-arm-none-eabi-gcc -o "stm32f4xx_drivers.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Itsik Ben Atar\STM32CubeIDE\workspace_1.4.0\embeddedCourse1\stm32f4xx_drivers\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f4xx_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+arm-none-eabi-gcc "../drivers/src/stm32f407xx_gpio_driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -DDEBUG -c -I../Inc -I"C:/Users/ITSIK/STM32CubeIDE/workspace_1.3.0/embeddedCourse1/stm32f4xx_drivers/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/src/stm32f407xx_gpio_driver.d" -MT"drivers/src/stm32f407xx_gpio_driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "drivers/src/stm32f407xx_gpio_driver.o"
+arm-none-eabi-gcc "../Src/005button_interupt.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -DDEBUG -c -I../Inc -I"C:/Users/ITSIK/STM32CubeIDE/workspace_1.3.0/embeddedCourse1/stm32f4xx_drivers/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/005button_interupt.d" -MT"Src/005button_interupt.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/005button_interupt.o"
+arm-none-eabi-gcc -o "stm32f4xx_drivers.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ITSIK\STM32CubeIDE\workspace_1.3.0\embeddedCourse1\stm32f4xx_drivers\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f4xx_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: stm32f4xx_drivers.elf
  
 arm-none-eabi-objdump -h -S  stm32f4xx_drivers.elf  > "stm32f4xx_drivers.list"
 arm-none-eabi-objcopy  -O binary  stm32f4xx_drivers.elf  "stm32f4xx_drivers.bin"
 arm-none-eabi-size   stm32f4xx_drivers.elf 
    text	   data	    bss	    dec	    hex	filename
-    676	      8	   1568	   2252	    8cc	stm32f4xx_drivers.elf
+   2556	      8	   1568	   4132	   1024	stm32f4xx_drivers.elf
 Finished building: default.size.stdout
  
 Finished building: stm32f4xx_drivers.bin
 Finished building: stm32f4xx_drivers.list
  
+ 
+12:40:54 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+make -j4 all 
+arm-none-eabi-size   stm32f4xx_drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2556	      8	   1568	   4132	   1024	stm32f4xx_drivers.elf
+Finished building: default.size.stdout
+ 
+12:41:35 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/005button_interupt.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -DDEBUG -c -I../Inc -I"C:/Users/ITSIK/STM32CubeIDE/workspace_1.3.0/embeddedCourse1/stm32f4xx_drivers/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/005button_interupt.d" -MT"Src/005button_interupt.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/005button_interupt.o"
+arm-none-eabi-gcc -o "stm32f4xx_drivers.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ITSIK\STM32CubeIDE\workspace_1.3.0\embeddedCourse1\stm32f4xx_drivers\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f4xx_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f4xx_drivers.elf
+ 
+arm-none-eabi-objdump -h -S  stm32f4xx_drivers.elf  > "stm32f4xx_drivers.list"
+arm-none-eabi-objcopy  -O binary  stm32f4xx_drivers.elf  "stm32f4xx_drivers.bin"
+arm-none-eabi-size   stm32f4xx_drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2556	      8	   1568	   4132	   1024	stm32f4xx_drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f4xx_drivers.bin
+Finished building: stm32f4xx_drivers.list
+ 
+ 
+12:42:10 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/005button_interupt.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -DDEBUG -c -I../Inc -I"C:/Users/ITSIK/STM32CubeIDE/workspace_1.3.0/embeddedCourse1/stm32f4xx_drivers/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/005button_interupt.d" -MT"Src/005button_interupt.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/005button_interupt.o"
+arm-none-eabi-gcc -o "stm32f4xx_drivers.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ITSIK\STM32CubeIDE\workspace_1.3.0\embeddedCourse1\stm32f4xx_drivers\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f4xx_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f4xx_drivers.elf
+ 
+arm-none-eabi-objdump -h -S  stm32f4xx_drivers.elf  > "stm32f4xx_drivers.list"
+arm-none-eabi-objcopy  -O binary  stm32f4xx_drivers.elf  "stm32f4xx_drivers.bin"
+arm-none-eabi-size   stm32f4xx_drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2556	      8	   1568	   4132	   1024	stm32f4xx_drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f4xx_drivers.list
+Finished building: stm32f4xx_drivers.bin
+ 
+ 
+12:42:29 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+make -j4 all 
+arm-none-eabi-size   stm32f4xx_drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2556	      8	   1568	   4132	   1024	stm32f4xx_drivers.elf
+Finished building: default.size.stdout
+ 
+12:43:48 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/005button_interupt.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -DDEBUG -c -I../Inc -I"C:/Users/ITSIK/STM32CubeIDE/workspace_1.3.0/embeddedCourse1/stm32f4xx_drivers/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/005button_interupt.d" -MT"Src/005button_interupt.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/005button_interupt.o"
+arm-none-eabi-gcc -o "stm32f4xx_drivers.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ITSIK\STM32CubeIDE\workspace_1.3.0\embeddedCourse1\stm32f4xx_drivers\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f4xx_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f4xx_drivers.elf
+ 
+arm-none-eabi-objdump -h -S  stm32f4xx_drivers.elf  > "stm32f4xx_drivers.list"
+arm-none-eabi-objcopy  -O binary  stm32f4xx_drivers.elf  "stm32f4xx_drivers.bin"
+arm-none-eabi-size   stm32f4xx_drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2584	      8	   1568	   4160	   1040	stm32f4xx_drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f4xx_drivers.list
+Finished building: stm32f4xx_drivers.bin
+ 
+ 
+12:50:52 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/005button_interupt.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -DDEBUG -c -I../Inc -I"C:/Users/ITSIK/STM32CubeIDE/workspace_1.3.0/embeddedCourse1/stm32f4xx_drivers/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/005button_interupt.d" -MT"Src/005button_interupt.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/005button_interupt.o"
+arm-none-eabi-gcc -o "stm32f4xx_drivers.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ITSIK\STM32CubeIDE\workspace_1.3.0\embeddedCourse1\stm32f4xx_drivers\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f4xx_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f4xx_drivers.elf
+ 
+arm-none-eabi-objdump -h -S  stm32f4xx_drivers.elf  > "stm32f4xx_drivers.list"
+arm-none-eabi-objcopy  -O binary  stm32f4xx_drivers.elf  "stm32f4xx_drivers.bin"
+arm-none-eabi-size   stm32f4xx_drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2548	      8	   1568	   4124	   101c	stm32f4xx_drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f4xx_drivers.list
+Finished building: stm32f4xx_drivers.bin
+ 
+ 
+12:51:18 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/005button_interupt.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -DDEBUG -c -I../Inc -I"C:/Users/ITSIK/STM32CubeIDE/workspace_1.3.0/embeddedCourse1/stm32f4xx_drivers/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/005button_interupt.d" -MT"Src/005button_interupt.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/005button_interupt.o"
+arm-none-eabi-gcc -o "stm32f4xx_drivers.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ITSIK\STM32CubeIDE\workspace_1.3.0\embeddedCourse1\stm32f4xx_drivers\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f4xx_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f4xx_drivers.elf
+ 
+arm-none-eabi-objdump -h -S  stm32f4xx_drivers.elf  > "stm32f4xx_drivers.list"
+arm-none-eabi-objcopy  -O binary  stm32f4xx_drivers.elf  "stm32f4xx_drivers.bin"
+arm-none-eabi-size   stm32f4xx_drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2556	      8	   1568	   4132	   1024	stm32f4xx_drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f4xx_drivers.bin
+Finished building: stm32f4xx_drivers.list
+ 
+ 
+12:51:49 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/005button_interupt.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -DDEBUG -c -I../Inc -I"C:/Users/ITSIK/STM32CubeIDE/workspace_1.3.0/embeddedCourse1/stm32f4xx_drivers/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/005button_interupt.d" -MT"Src/005button_interupt.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/005button_interupt.o"
+../Src/005button_interupt.c: In function 'EXTI0_IRQHandler':
+../Src/005button_interupt.c:48:2: error: expected ';' before 'GPIO_ToggleOutPutPin'
+  GPIO_ToggleOutPutPin(GPIOD, GPIO_PIN_NO_12);
+  ^~~~~~~~~~~~~~~~~~~~
+make: *** [Src/subdir.mk:24: Src/005button_interupt.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+12:52:11 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/005button_interupt.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -DDEBUG -c -I../Inc -I"C:/Users/ITSIK/STM32CubeIDE/workspace_1.3.0/embeddedCourse1/stm32f4xx_drivers/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/005button_interupt.d" -MT"Src/005button_interupt.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/005button_interupt.o"
+arm-none-eabi-gcc -o "stm32f4xx_drivers.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ITSIK\STM32CubeIDE\workspace_1.3.0\embeddedCourse1\stm32f4xx_drivers\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f4xx_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f4xx_drivers.elf
+ 
+arm-none-eabi-objdump -h -S  stm32f4xx_drivers.elf  > "stm32f4xx_drivers.list"
+arm-none-eabi-objcopy  -O binary  stm32f4xx_drivers.elf  "stm32f4xx_drivers.bin"
+arm-none-eabi-size   stm32f4xx_drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2556	      8	   1568	   4132	   1024	stm32f4xx_drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f4xx_drivers.bin
+Finished building: stm32f4xx_drivers.list
+ 
+ 
+12:52:44 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+make -j4 all 
+arm-none-eabi-size   stm32f4xx_drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2556	      8	   1568	   4132	   1024	stm32f4xx_drivers.elf
+Finished building: default.size.stdout
+ 
+12:53:10 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+make -j4 all 
+arm-none-eabi-size   stm32f4xx_drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2556	      8	   1568	   4132	   1024	stm32f4xx_drivers.elf
+Finished building: default.size.stdout
+ 
+12:53:34 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/005button_interupt.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -DDEBUG -c -I../Inc -I"C:/Users/ITSIK/STM32CubeIDE/workspace_1.3.0/embeddedCourse1/stm32f4xx_drivers/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/005button_interupt.d" -MT"Src/005button_interupt.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/005button_interupt.o"
+arm-none-eabi-gcc -o "stm32f4xx_drivers.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ITSIK\STM32CubeIDE\workspace_1.3.0\embeddedCourse1\stm32f4xx_drivers\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f4xx_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f4xx_drivers.elf
+ 
+arm-none-eabi-objdump -h -S  stm32f4xx_drivers.elf  > "stm32f4xx_drivers.list"
+arm-none-eabi-objcopy  -O binary  stm32f4xx_drivers.elf  "stm32f4xx_drivers.bin"
+arm-none-eabi-size   stm32f4xx_drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2548	      8	   1568	   4124	   101c	stm32f4xx_drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f4xx_drivers.bin
+Finished building: stm32f4xx_drivers.list
+ 
+ 
+12:55:25 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+make -j4 all 
+arm-none-eabi-size   stm32f4xx_drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2548	      8	   1568	   4124	   101c	stm32f4xx_drivers.elf
+Finished building: default.size.stdout
+ 
+12:55:41 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+make -j4 all 
+arm-none-eabi-size   stm32f4xx_drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2548	      8	   1568	   4124	   101c	stm32f4xx_drivers.elf
+Finished building: default.size.stdout
+ 
+12:56:38 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+make -j4 all 
+arm-none-eabi-size   stm32f4xx_drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2548	      8	   1568	   4124	   101c	stm32f4xx_drivers.elf
+Finished building: default.size.stdout
+ 
+13:05:57 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/005button_interupt.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -DDEBUG -c -I../Inc -I"C:/Users/ITSIK/STM32CubeIDE/workspace_1.3.0/embeddedCourse1/stm32f4xx_drivers/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/005button_interupt.d" -MT"Src/005button_interupt.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/005button_interupt.o"
+../Src/005button_interupt.c: In function 'main':
+../Src/005button_interupt.c:11:2: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  memset(&GpioLed,0,sizeof(GpioLed));
+  ^~~~~~
+../Src/005button_interupt.c:11:2: warning: incompatible implicit declaration of built-in function 'memset'
+../Src/005button_interupt.c:11:2: note: include '<string.h>' or provide a declaration of 'memset'
+arm-none-eabi-gcc -o "stm32f4xx_drivers.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ITSIK\STM32CubeIDE\workspace_1.3.0\embeddedCourse1\stm32f4xx_drivers\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f4xx_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f4xx_drivers.elf
+ 
+arm-none-eabi-objdump -h -S  stm32f4xx_drivers.elf  > "stm32f4xx_drivers.list"
+arm-none-eabi-objcopy  -O binary  stm32f4xx_drivers.elf  "stm32f4xx_drivers.bin"
+arm-none-eabi-size   stm32f4xx_drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2588	      8	   1568	   4164	   1044	stm32f4xx_drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f4xx_drivers.list
+Finished building: stm32f4xx_drivers.bin
+ 
+ 
+13:06:39 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/005button_interupt.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -DDEBUG -c -I../Inc -I"C:/Users/ITSIK/STM32CubeIDE/workspace_1.3.0/embeddedCourse1/stm32f4xx_drivers/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/005button_interupt.d" -MT"Src/005button_interupt.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/005button_interupt.o"
+../Src/005button_interupt.c: In function 'main':
+../Src/005button_interupt.c:11:2: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  memset(&GpioLed,0,sizeof(GpioLed));
+  ^~~~~~
+../Src/005button_interupt.c:11:2: warning: incompatible implicit declaration of built-in function 'memset'
+../Src/005button_interupt.c:11:2: note: include '<string.h>' or provide a declaration of 'memset'
+arm-none-eabi-gcc -o "stm32f4xx_drivers.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ITSIK\STM32CubeIDE\workspace_1.3.0\embeddedCourse1\stm32f4xx_drivers\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f4xx_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f4xx_drivers.elf
+ 
+arm-none-eabi-objdump -h -S  stm32f4xx_drivers.elf  > "stm32f4xx_drivers.list"
+arm-none-eabi-objcopy  -O binary  stm32f4xx_drivers.elf  "stm32f4xx_drivers.bin"
+arm-none-eabi-size   stm32f4xx_drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2588	      8	   1568	   4164	   1044	stm32f4xx_drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f4xx_drivers.bin
+Finished building: stm32f4xx_drivers.list
+ 
+ 
+13:07:28 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/005button_interupt.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -DDEBUG -c -I../Inc -I"C:/Users/ITSIK/STM32CubeIDE/workspace_1.3.0/embeddedCourse1/stm32f4xx_drivers/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/005button_interupt.d" -MT"Src/005button_interupt.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/005button_interupt.o"
+arm-none-eabi-gcc -o "stm32f4xx_drivers.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ITSIK\STM32CubeIDE\workspace_1.3.0\embeddedCourse1\stm32f4xx_drivers\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f4xx_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f4xx_drivers.elf
+ 
+arm-none-eabi-objdump -h -S  stm32f4xx_drivers.elf  > "stm32f4xx_drivers.list"
+arm-none-eabi-objcopy  -O binary  stm32f4xx_drivers.elf  "stm32f4xx_drivers.bin"
+arm-none-eabi-size   stm32f4xx_drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2588	      8	   1568	   4164	   1044	stm32f4xx_drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f4xx_drivers.list
+Finished building: stm32f4xx_drivers.bin
+ 
+ 
+13:08:45 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/005button_interupt.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -DDEBUG -c -I../Inc -I"C:/Users/ITSIK/STM32CubeIDE/workspace_1.3.0/embeddedCourse1/stm32f4xx_drivers/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/005button_interupt.d" -MT"Src/005button_interupt.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/005button_interupt.o"
+arm-none-eabi-gcc -o "stm32f4xx_drivers.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ITSIK\STM32CubeIDE\workspace_1.3.0\embeddedCourse1\stm32f4xx_drivers\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f4xx_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f4xx_drivers.elf
+ 
+arm-none-eabi-objdump -h -S  stm32f4xx_drivers.elf  > "stm32f4xx_drivers.list"
+arm-none-eabi-objcopy  -O binary  stm32f4xx_drivers.elf  "stm32f4xx_drivers.bin"
+arm-none-eabi-size   stm32f4xx_drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2636	      8	   1568	   4212	   1074	stm32f4xx_drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f4xx_drivers.list
+Finished building: stm32f4xx_drivers.bin
+ 
+ 
+13:11:20 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+make -j4 all 
+arm-none-eabi-size   stm32f4xx_drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2636	      8	   1568	   4212	   1074	stm32f4xx_drivers.elf
+Finished building: default.size.stdout
  
